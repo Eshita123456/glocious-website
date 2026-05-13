@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GrowMark - Digital Marketing HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    /* Section */
+.bulk-sms-section{
+    position:relative;
+    background:linear-gradient(135deg,#f8fbff,#ffffff);
+    overflow:hidden;
+}
+
+/* Background Shapes */
+.shape{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:0.25;
+}
+
+.shape-1{
+    width:250px;
+    height:250px;
+    background:#7b4dff;
+    top:-80px;
+    left:-80px;
+}
+
+.shape-2{
+    width:220px;
+    height:220px;
+    background:#00c2ff;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* Left Visual */
+.sms-visual{
+    position:relative;
+    width:500px;
+    height:500px;
+    margin:auto;
+}
+
+/* Center Circle */
+.center-circle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#7b4dff,#a855f7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(123,77,255,0.3);
+    z-index:5;
+}
+
+.center-circle h2{
+    color:#fff;
+    font-size:42px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+/* Bubble */
+.bubble{
+    position:absolute;
+    background:#fff;
+    padding:15px 20px;
+    border-radius:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    font-weight:600;
+    color:#222;
+    min-width:150px;
+    text-align:center;
+    animation:float 4s ease-in-out infinite;
+}
+
+.bubble i{
+    display:block;
+    font-size:28px;
+    margin-bottom:8px;
+    color:#7b4dff;
+}
+
+/* Bubble Positions */
+.bubble-1{
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.bubble-2{
+    top:120px;
+    right:0;
+}
+
+.bubble-3{
+    bottom:100px;
+    right:20px;
+}
+
+.bubble-4{
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.bubble-5{
+    bottom:100px;
+    left:20px;
+}
+
+.bubble-6{
+    top:120px;
+    left:0;
+}
+
+/* Floating Animation */
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Right Side */
+.section-badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:#efe9ff;
+    color:#7b4dff;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.section-title{
+    font-size:52px;
+    font-weight:800;
+    margin-top:20px;
+    line-height:1.2;
+    color:#111;
+}
+
+.section-title span{
+    color:#7b4dff;
+}
+
+.section-text{
+    color:#666;
+    line-height:2;
+    margin-top:25px;
+    font-size:17px;
+}
+
+/* Feature */
+.feature-item{
+    background:#fff;
+    padding:16px 20px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+    font-weight:600;
+}
+
+.feature-item i{
+    color:#7b4dff;
+    margin-right:10px;
+}
+
+/* Buttons */
+.btn-main{
+    background:#7b4dff;
+    color:#fff;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.btn-main:hover{
+    background:#6236e0;
+    color:#fff;
+}
+
+.btn-outline-main{
+    border:2px solid #7b4dff;
+    color:#7b4dff;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.btn-outline-main:hover{
+    background:#7b4dff;
+    color:#fff;
+}
+
+/* Responsive */
+@media(max-width:991px){
+
+    .sms-visual{
+        width:100%;
+        height:600px;
+    }
+
+    .section-title{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .center-circle{
+        width:140px;
+        height:140px;
+    }
+
+    .center-circle h2{
+        font-size:32px;
+    }
+
+    .bubble{
+        min-width:120px;
+        font-size:14px;
+        padding:12px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+}
+
+/* Section */
+.benefits-section{
+    position:relative;
+    background:#f9fbff;
+    overflow:hidden;
+}
+
+/* Background Blur */
+.blur-shape{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:0.2;
+}
+
+.blur-1{
+    width:220px;
+    height:220px;
+    background:#7b4dff;
+    top:-80px;
+    left:-80px;
+}
+
+.blur-2{
+    width:220px;
+    height:220px;
+    background:#00bfff;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* Left Side */
+.section-tag{
+    display:inline-block;
+    padding:8px 18px;
+    background:#efe9ff;
+    color:#7b4dff;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.section-heading{
+    font-size:50px;
+    font-weight:800;
+    margin-top:20px;
+    color:#111;
+    line-height:1.2;
+}
+
+.section-heading span{
+    color:#7b4dff;
+}
+
+.section-description{
+    color:#666;
+    line-height:2;
+    margin-top:25px;
+    font-size:16px;
+}
+
+/* Accordion */
+.custom-accordion{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.accordion-item-custom{
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.accordion-item-custom.active{
+    border-left:5px solid #7b4dff;
+}
+
+.accordion-header-custom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.accordion-header-custom h5{
+    margin:0;
+    font-weight:700;
+    font-size:18px;
+}
+
+.accordion-header-custom i{
+    color:#7b4dff;
+    font-size:20px;
+}
+
+.accordion-body-custom{
+    margin-top:15px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* Button */
+.btn-contact{
+    background:#7b4dff;
+    color:#fff;
+    padding:14px 32px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.btn-contact:hover{
+    background:#6336e2;
+    color:#fff;
+}
+
+/* Right Side */
+.illustration-box{
+    position:relative;
+    width:500px;
+    height:500px;
+    margin:auto;
+}
+
+/* Background Circle */
+.bg-circle{
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:linear-gradient(135deg,#efe9ff,#dbe9ff);
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* Mobile */
+.mobile-card{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:260px;
+    background:#fff;
+    border-radius:35px;
+    padding:20px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.08);
+    z-index:5;
+}
+
+/* Mobile Top */
+.mobile-top{
+    width:90px;
+    height:8px;
+    background:#ddd;
+    border-radius:20px;
+    margin:auto;
+    margin-bottom:25px;
+}
+
+/* Message List */
+.message-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* Message Item */
+.message-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#f8fbff;
+    padding:15px;
+    border-radius:18px;
+    transition:0.3s;
+}
+
+.message-item:hover{
+    transform:translateY(-3px);
+}
+
+/* Icon */
+.msg-icon{
+    min-width:50px;
+    height:50px;
+    border-radius:15px;
+    background:#7b4dff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:20px;
+}
+
+.msg-icon.green{
+    background:#22c55e;
+}
+
+.msg-icon.orange{
+    background:#f59e0b;
+}
+
+.msg-icon.pink{
+    background:#ec4899;
+}
+
+/* Text */
+.msg-content h6{
+    margin:0;
+    font-weight:700;
+    font-size:15px;
+}
+
+.msg-content span{
+    color:#777;
+    font-size:13px;
+}
+
+/* Floating Icons */
+.floating-icon{
+    position:absolute;
+    width:70px;
+    height:70px;
+    background:#fff;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7b4dff;
+    font-size:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    animation:float 4s ease-in-out infinite;
+}
+
+.icon-1{
+    top:60px;
+    left:40px;
+}
+
+.icon-2{
+    top:120px;
+    right:20px;
+}
+
+.icon-3{
+    bottom:70px;
+    left:60px;
+}
+
+/* User Images */
+.user-img{
+    position:absolute;
+    width:90px;
+    z-index:10;
+    animation:floatUser 4s ease-in-out infinite;
+}
+/* Left User */
+.user-left{
+    bottom:40px;
+    left:-20px;
+}
+
+/* Right User */
+.user-right{
+    bottom:40px;
+    right:-20px;
+}
+/* Animation */
+@keyframes floatUser{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Mobile Responsive */
+@media(max-width:576px){
+
+    .user-img{
+        width:65px;
+    }
+
+    .user-left{
+        left:-10px;
+    }
+
+    .user-right{
+        right:-10px;
+    }
+
+}
+
+/* Animation */
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Responsive */
+@media(max-width:991px){
+
+    .illustration-box{
+        width:100%;
+        height:500px;
+    }
+
+    .section-heading{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .section-heading{
+        font-size:30px;
+    }
+
+    .mobile-card{
+        width:180px;
+        height:320px;
+    }
+
+    .floating-icon{
+        width:55px;
+        height:55px;
+        font-size:22px;
+    }
+
+}
+
+.provider-section{
+    position:relative;
+    background:linear-gradient(135deg,#f8fbff,#ffffff);
+    overflow:hidden;
+}
+
+/* Background Shapes */
+.provider-shape{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:0.18;
+}
+
+.shape-left{
+    width:250px;
+    height:250px;
+    background:#7b4dff;
+    top:-100px;
+    left:-100px;
+}
+
+.shape-right{
+    width:220px;
+    height:220px;
+    background:#00c2ff;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* Left Side */
+.provider-image-box{
+    position:relative;
+    padding:30px;
+}
+
+.provider-main-img{
+    position:relative;
+    z-index:2;
+    animation:float 4s ease-in-out infinite;
+}
+
+/* Floating Card */
+.floating-card{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#fff;
+    padding:15px 18px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    z-index:5;
+}
+
+.card-one{
+    top:30px;
+    right:0;
+}
+
+.card-two{
+    bottom:60px;
+    left:0;
+}
+
+/* Icon */
+.icon-box{
+    width:55px;
+    height:55px;
+    border-radius:16px;
+    background:#7b4dff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:22px;
+}
+
+.icon-box.purple{
+    background:#9333ea;
+}
+
+/* Floating Badge */
+.floating-badge{
+    position:absolute;
+    bottom:10px;
+    right:40px;
+    background:#7b4dff;
+    color:#fff;
+    padding:14px 22px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:0 10px 30px rgba(123,77,255,0.25);
+}
+
+.floating-badge i{
+    margin-right:8px;
+}
+
+/* Right Side */
+.section-label{
+    display:inline-block;
+    padding:8px 18px;
+    background:#efe9ff;
+    color:#7b4dff;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.provider-title{
+    font-size:54px;
+    font-weight:800;
+    margin-top:20px;
+    line-height:1.2;
+    color:#111;
+}
+
+.provider-title span{
+    color:#7b4dff;
+}
+
+.provider-text{
+    margin-top:25px;
+    color:#666;
+    line-height:2;
+    font-size:16px;
+}
+
+/* Features */
+.provider-features{
+    margin-top:35px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.feature-box{
+    display:flex;
+    gap:18px;
+    background:#fff;
+    padding:22px;
+    border-radius:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+
+/* Feature Icon */
+.feature-icon{
+    min-width:60px;
+    height:60px;
+    border-radius:18px;
+    background:#7b4dff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:24px;
+}
+
+.feature-icon.purple{
+    background:#9333ea;
+}
+
+.feature-icon.orange{
+    background:#f59e0b;
+}
+
+/* Feature Text */
+.feature-box h5{
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.feature-box p{
+    margin:0;
+    color:#666;
+    line-height:1.7;
+}
+
+/* Button */
+.btn-provider{
+    background:#7b4dff;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-provider:hover{
+    background:#6236e0;
+    color:#fff;
+}
+
+/* Animation */
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Responsive */
+@media(max-width:991px){
+
+    .provider-title{
+        font-size:38px;
+    }
+
+    .provider-image-box{
+        margin-bottom:30px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .provider-title{
+        font-size:30px;
+    }
+
+    .feature-box{
+        flex-direction:column;
+    }
+
+    .floating-card{
+        display:none;
+    }
+
+    .floating-badge{
+        right:20px;
+    }
+
+}
+
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
+        <div class="container py-3">
+            <div class="d-flex align-items-center">
+                <a href="index.html">
+                    <h2 class="text-white fw-bold m-0">GLOCIOUS</h2>
+                </a>
+                <div class="ms-auto d-flex align-items-center">
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>Kaushambi, Ghaziabad, Uttar Pradesh
+                        201010</small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@glocious.com</small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+91 9319499699</small>
+                    <div class="ms-3 d-flex">
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="fw-bold m-0">GLOCIOUS</h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="SMS.html" class="dropdown-item">BULK SMS</a>
+                                <a href="RCS.html" class="dropdown-item">RCS Message</a>
+                                <a href="Email.html" class="dropdown-item">BULK Email</a>
+                                <a href="Voice.html" class="dropdown-item">Voice Call</a>
+                                <a href="Whatsapp.html" class="dropdown-item">Whatsapp Marketing</a>
+                            </div>
+                        </div>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="quote.html" class="dropdown-item">Quotation</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-block">
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <section class="bulk-sms-section py-5">
+
+        <!-- Background Shapes -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- Left Side -->
+                <div class="col-lg-6">
+
+                    <div class="sms-visual">
+
+                        <!-- Center Circle -->
+                        <div class="center-circle">
+                            <h2>BULK<br>SMS</h2>
+                        </div>
+
+                        <!-- Floating Bubbles -->
+
+                        <div class="bubble bubble-1">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                            Fast Delivery
+                        </div>
+
+                        <div class="bubble bubble-2">
+                            <i class="bi bi-shield-check"></i>
+                            Secure SMS
+                        </div>
+
+                        <div class="bubble bubble-3">
+                            <i class="bi bi-headset"></i>
+                            24x7 Support
+                        </div>
+
+                        <div class="bubble bubble-4">
+                            <i class="bi bi-currency-rupee"></i>
+                            Lowest Cost
+                        </div>
+
+                        <div class="bubble bubble-5">
+                            <i class="bi bi-clock-history"></i>
+                            Lifetime Validity
+                        </div>
+
+                        <div class="bubble bubble-6">
+                            <i class="bi bi-person-check"></i>
+                            Easy Login
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-6">
+
+                    <span class="section-badge">
+                        SMS SERVICES
+                    </span>
+
+                    <h2 class="section-title">
+                        Bulk SMS Solutions For
+                        <span>Modern Businesses</span>
+                    </h2>
+
+                    <p class="section-text">
+                        In today's fast-paced world, businesses and organizations require efficient communication tools
+                        to reach their target audience effectively. Bulk SMS service has emerged as a popular solution,
+                        allowing organizations to send large volumes of text messages simultaneously. This article
+                        explores the benefits and features of bulk SMS, while highlighting the importance of choosing a
+                        reliable bulk SMS provider.</p>
+
+                    <!-- Buttons -->
+                    <div class="mt-5 d-flex gap-3 flex-wrap">
+
+                        <a href="#" class="btn btn-main">
+                            Download Brochure
+                        </a>
+
+                        <a href="#" class="btn btn-outline-main">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="benefits-section py-5">
+
+        <!-- Background Shapes -->
+        <div class="blur-shape blur-1"></div>
+        <div class="blur-shape blur-2"></div>
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- Left Content -->
+                <div class="col-lg-6">
+
+                    <span class="section-tag">
+                        BULK SMS
+                    </span>
+
+                    <h2 class="section-heading">
+                        Benefits Of Bulk SMS
+                        <span>Services</span>
+                    </h2>
+
+                    <p class="section-description">
+                        Bulk SMS is one of the most powerful communication
+                        tools for businesses to connect instantly with
+                        customers. It helps brands deliver promotional,
+                        transactional, and personalized messages with
+                        high-speed delivery and better engagement.
+                    </p>
+
+                    <!-- Accordion -->
+                    <div class="custom-accordion mt-4">
+
+                        <!-- Item -->
+                        <div class="accordion-item-custom active">
+
+                            <div class="accordion-header-custom">
+                                <h5>Cost Effective</h5>
+                                <i class="bi bi-dash"></i>
+                            </div>
+
+                            <div class="accordion-body-custom">
+                                Bulk SMS helps businesses reduce marketing
+                                costs while reaching thousands of users
+                                instantly with high ROI campaigns.
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item-custom">
+
+                            <div class="accordion-header-custom">
+                                <h5>Wide Reach</h5>
+                                <i class="bi bi-plus"></i>
+                            </div>
+
+                            <div class="accordion-body-custom">
+                                Connect with customers across different
+                                regions instantly using reliable messaging
+                                services.
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item-custom">
+
+                            <div class="accordion-header-custom">
+                                <h5>Instant Delivery</h5>
+                                <i class="bi bi-plus"></i>
+                            </div>
+
+                            <div class="accordion-body-custom">
+                                Send OTPs, alerts, and promotional messages
+                                within seconds using high-speed SMS gateways.
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item-custom">
+
+                            <div class="accordion-header-custom">
+                                <h5>Personalization</h5>
+                                <i class="bi bi-plus"></i>
+                            </div>
+
+                            <div class="accordion-body-custom">
+                                Create customized SMS campaigns to improve
+                                customer engagement and conversion rates.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Button -->
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-contact">
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE ILLUSTRATION -->
+                <div class="col-lg-6">
+
+                    <div class="illustration-box">
+
+                        <!-- Background Circle -->
+                        <div class="bg-circle"></div>
+
+                        <!-- Main Mobile -->
+                        <div class="mobile-card">
+
+                            <!-- Mobile Top -->
+                            <div class="mobile-top"></div>
+
+                            <!-- Message Box -->
+                            <div class="message-list">
+
+                                <div class="message-item">
+                                    <div class="msg-icon">
+                                        <i class="bi bi-chat-fill"></i>
+                                    </div>
+
+                                    <div class="msg-content">
+                                        <h6>Promotional SMS</h6>
+                                        <span>Reach customers instantly</span>
+                                    </div>
+                                </div>
+
+                                <div class="message-item">
+                                    <div class="msg-icon green">
+                                        <i class="bi bi-shield-check"></i>
+                                    </div>
+
+                                    <div class="msg-content">
+                                        <h6>OTP SMS</h6>
+                                        <span>Secure verification service</span>
+                                    </div>
+                                </div>
+
+                                <div class="message-item">
+                                    <div class="msg-icon orange">
+                                        <i class="bi bi-lightning-charge-fill"></i>
+                                    </div>
+
+                                    <div class="msg-content">
+                                        <h6>Instant Delivery</h6>
+                                        <span>High speed SMS gateway</span>
+                                    </div>
+                                </div>
+
+                                <div class="message-item">
+                                    <div class="msg-icon pink">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+
+                                    <div class="msg-content">
+                                        <h6>Bulk Campaign</h6>
+                                        <span>Send thousands of SMS</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Floating Icons -->
+                        <div class="floating-icon icon-1">
+                            <i class="bi bi-send-fill"></i>
+                        </div>
+
+                        <div class="floating-icon icon-2">
+                            <i class="bi bi-bell-fill"></i>
+                        </div>
+
+                        <div class="floating-icon icon-3">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+
+                        <!-- USER IMAGES -->
+                        <img src="./img/user1.png" class="user-img user-left" alt="User Girl">
+
+                        <img src="./img/user 2.png" class="user-img user-right" alt="User Boy">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="provider-section py-5">
+
+        <!-- Background Effects -->
+        <div class="provider-shape shape-left"></div>
+        <div class="provider-shape shape-right"></div>
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- Left Illustration -->
+                <div class="col-lg-6">
+
+                    <div class="provider-image-box">
+
+                        <!-- Main Illustration -->
+                        <img src="./img/bulk sms image.png" class="img-fluid provider-main-img" alt="Bulk SMS Provider">
+
+                    </div>
+
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6">
+
+                    <span class="section-label">
+                        SMS PROVIDER
+                    </span>
+
+                    <h2 class="provider-title">
+                        Choosing The Right
+                        <span>Bulk SMS Provider</span>
+                    </h2>
+
+                    <p class="provider-text">
+                        Selecting the right bulk SMS provider helps businesses
+                        communicate faster, improve customer engagement, and
+                        deliver messages instantly with maximum reliability.
+                    </p>
+
+                    <!-- Feature List -->
+                    <div class="provider-features">
+
+                        <div class="feature-box">
+
+                            <div class="feature-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+
+                            <div>
+                                <h5>Reputation & Reliability</h5>
+
+                                <p>
+                                    Choose a trusted provider with a strong
+                                    track record of successful message delivery.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="feature-box">
+
+                            <div class="feature-icon purple">
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+
+                            <div>
+                                <h5>High Scalability</h5>
+
+                                <p>
+                                    Handle thousands of SMS campaigns easily
+                                    without affecting delivery speed.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="feature-box">
+
+                            <div class="feature-icon orange">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+
+                            <div>
+                                <h5>Analytics & Reports</h5>
+
+                                <p>
+                                    Get detailed campaign reports, delivery
+                                    status, and customer insights instantly.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Button -->
+                    <div class="mt-4">
+
+                        <a href="#" class="btn btn-provider">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Our Team</p>
+                <h1 class="display-5 mb-5">Our Expert People Ready to Help You</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
+                        <h5>Alex Robin</h5>
+                        <span class="text-primary">Founder & CEO</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-2.jpg" alt="">
+                        <h5>Adam Crew</h5>
+                        <span class="text-primary">Co Founder</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-3.jpg" alt="">
+                        <h5>Boris Johnson</h5>
+                        <span class="text-primary">Executive Manager</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-4.jpg" alt="">
+                        <h5>Robert Jordan</h5>
+                        <span class="text-primary">Digital Marketer</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl pt-5">
+        <div class="container">
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Testimonial</p>
+                <h1 class="display-5 mb-5">What Clients Say About Our Services!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-1.jpg" alt="">
+                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit, sed stet lorem sit clita duo justo</p>
+                    <h5>Client Name</h5>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-2.jpg" alt="">
+                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit, sed stet lorem sit clita duo justo</p>
+                    <h5>Client Name</h5>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-3.jpg" alt="">
+                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit, sed stet lorem sit clita duo justo</p>
+                    <h5>Client Name</h5>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-4.jpg" alt="">
+                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit, sed stet lorem sit clita duo justo</p>
+                    <h5>Client Name</h5>
+                    <span class="text-primary">Profession</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kaushambi, Ghaziabad, Uttar Pradesh 201010
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9319499699</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@glocious.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Saturday</p>
+                    <h6 class="text-light">10:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
