@@ -551,5 +551,207 @@
 
     });
 
+    // =========================
+// IVR Benefit Accordion
+// =========================
+$('.ivr-benefit-card').on('click', function () {
+
+    let current = $(this);
+
+    // Close All
+    $('.ivr-benefit-card')
+        .removeClass('active');
+
+    $('.ivr-benefit-body')
+        .slideUp(300);
+
+    $('.ivr-toggle i')
+        .removeClass('bi-dash')
+        .addClass('bi-plus');
+
+    // Open Current
+    current.addClass('active');
+
+    current.find('.ivr-benefit-body')
+        .slideDown(300);
+
+    current.find('.ivr-toggle i')
+        .removeClass('bi-plus')
+        .addClass('bi-dash');
+
+});
+
+
+// =========================
+// IVR Floating Animation
+// =========================
+floatingAnimation('.ivr-float-card', 0.5);
+
+
+// =========================
+// IVR Hover Effects
+// =========================
+$('.ivr-benefit-card, .ivr-float-card').hover(
+
+    function () {
+
+        $(this).css({
+            transform: 'translateY(-8px)',
+            transition: '.4s'
+        });
+
+    },
+
+    function () {
+
+        $(this).css({
+            transform: 'translateY(0px)'
+        });
+
+    }
+
+);
+
+
+// =========================
+// IVR Mouse Effect
+// =========================
+$('.ivr-float-card').mousemove(function (e) {
+
+    let moveX = (e.pageX * -1 / 35);
+    let moveY = (e.pageY * -1 / 35);
+
+    $(this).css({
+        transform: 'translate(' + moveX + 'px,' + moveY + 'px)'
+    });
+
+});
+
+
+// =========================
+// IVR Image Animation
+// =========================
+$('.ivr-benefit-image').hover(
+
+    function () {
+
+        $(this).css({
+            transform: 'scale(1.03)',
+            transition: '.5s'
+        });
+
+    },
+
+    function () {
+
+        $(this).css({
+            transform: 'scale(1)'
+        });
+
+    }
+
+);
+
+// =========================
+// FAQ Accordion
+// =========================
+$('.faq-card').on('click', function () {
+
+    let current = $(this);
+
+    // Close All
+    $('.faq-card')
+        .removeClass('active');
+
+    $('.faq-body')
+        .slideUp(300);
+
+    $('.faq-toggle i')
+        .removeClass('bi-dash')
+        .addClass('bi-plus');
+
+    // Open Current
+    current.addClass('active');
+
+    current.find('.faq-body')
+        .slideDown(300);
+
+    current.find('.faq-toggle i')
+        .removeClass('bi-plus')
+        .addClass('bi-dash');
+
+});
+
+
+// =========================
+// FAQ Floating Animation
+// =========================
+floatingAnimation('.faq-floating', 0.5);
+
+
+// =========================
+// FAQ Hover Effects
+// =========================
+$('.faq-card, .faq-floating').hover(
+
+    function () {
+
+        $(this).css({
+            transform: 'translateY(-8px)',
+            transition: '.4s'
+        });
+
+    },
+
+    function () {
+
+        $(this).css({
+            transform: 'translateY(0px)'
+        });
+
+    }
+
+);
+
+
+// =========================
+// FAQ Mouse Effect
+// =========================
+$('.faq-floating').mousemove(function (e) {
+
+    let moveX = (e.pageX * -1 / 35);
+    let moveY = (e.pageY * -1 / 35);
+
+    $(this).css({
+        transform: 'translate(' + moveX + 'px,' + moveY + 'px)'
+    });
+
+});
+
+
+// =========================
+// FAQ Main Icon Hover
+// =========================
+$('.faq-main-icon').hover(
+
+    function () {
+
+        $(this).css({
+            transform: 'scale(1.05)',
+            transition: '.4s'
+        });
+
+    },
+
+    function () {
+
+        $(this).css({
+            transform: 'scale(1)'
+        });
+
+    }
+
+);
+
 
 })(jQuery);

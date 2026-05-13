@@ -761,7 +761,373 @@
     }
 
 }
+/* =========================================
+   FAQ MODERN SECTION
+========================================= */
 
+.faq-modern-section{
+    position: relative;
+    background: linear-gradient(135deg,#f8fbff,#ffffff);
+    overflow: hidden;
+}
+
+/* =========================================
+   BACKGROUND SHAPES
+========================================= */
+
+.faq-shape{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: .18;
+    z-index: 0;
+}
+
+.shape-one{
+    width: 220px;
+    height: 220px;
+    background: #7b4dff;
+    top: -80px;
+    left: -80px;
+}
+
+.shape-two{
+    width: 220px;
+    height: 220px;
+    background: #00c2ff;
+    bottom: -80px;
+    right: -80px;
+}
+
+/* =========================================
+   TAG
+========================================= */
+
+.faq-tag{
+    display: inline-block;
+    padding: 8px 20px;
+    background: #efe9ff;
+    color: #7b4dff;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.faq-heading{
+    font-size: 58px;
+    font-weight: 800;
+    margin-top: 20px;
+    line-height: 1.2;
+    color: #111;
+    position: relative;
+    z-index: 2;
+}
+
+.faq-heading span{
+    background: linear-gradient(90deg,#7b4dff,#00c2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.faq-subtitle{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    color: #666;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================================
+   FAQ CARD
+========================================= */
+
+.faq-card{
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: .4s;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.faq-card.active{
+    background: #f8f6ff;
+    border: 1px solid #ebe5ff;
+}
+
+/* Hover */
+
+.faq-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   FAQ HEAD
+========================================= */
+
+.faq-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-head h5{
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+    color: #111;
+    padding-right: 20px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   FAQ TOGGLE
+========================================= */
+
+.faq-toggle{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background: #7b4dff15;
+    color: #7b4dff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.faq-card.active .faq-toggle{
+    background: linear-gradient(135deg,#7b4dff,#00c2ff);
+    color: #fff;
+}
+
+/* =========================================
+   FAQ BODY
+========================================= */
+
+.faq-body{
+    padding-top: 18px;
+    display: none;
+}
+
+.faq-card.active .faq-body{
+    display: block;
+}
+
+.faq-body p{
+    margin: 0;
+    color: #666;
+    line-height: 2;
+    font-size: 15px;
+}
+
+/* =========================================
+   RIGHT IMAGE BOX
+========================================= */
+
+.faq-image-box{
+    position: relative;
+    padding: 60px 40px;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Glow */
+
+.faq-glow{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg,#7b4dff20,#00c2ff20);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: faqGlow 5s infinite;
+}
+
+/* =========================================
+   MAIN ICON
+========================================= */
+
+.faq-main-icon{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#7b4dff,#00c2ff);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 20px 60px rgba(123,77,255,.25);
+    animation: faqFloat 4s ease-in-out infinite;
+}
+
+/* =========================================
+   FLOATING CARDS
+========================================= */
+
+.faq-floating{
+    position: absolute;
+    background: #fff;
+    padding: 14px 22px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    font-weight: 600;
+    z-index: 5;
+    animation: faqCard 4s ease-in-out infinite;
+}
+
+.faq-floating i{
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#7b4dff,#00c2ff);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Positions */
+
+.float-one{
+    top: 40px;
+    left: 0;
+}
+
+.float-two{
+    top: 140px;
+    right: 0;
+}
+
+.float-three{
+    bottom: 50px;
+    left: 60px;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes faqFloat{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes faqCard{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes faqGlow{
+
+    0%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    50%{
+        transform: translate(-50%,-50%) scale(1.08);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .faq-heading{
+        font-size: 40px;
+    }
+
+    .faq-image-box{
+        min-height: 350px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .faq-heading{
+        font-size: 30px;
+    }
+
+    .faq-floating{
+        display: none;
+    }
+
+    .faq-card{
+        padding: 20px;
+    }
+
+    .faq-head h5{
+        font-size: 16px;
+    }
+
+    .faq-main-icon{
+        width: 130px;
+        height: 130px;
+        font-size: 60px;
+    }
+
+}
 .marketing-section{
     background:#f8fbff;
     overflow:hidden;
