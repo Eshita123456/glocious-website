@@ -889,6 +889,98 @@
 
     }
 
+    /* Section */
+    .voice-about-section {
+        background: linear-gradient(135deg, #f8fbff, #ffffff);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Tag */
+    .voice-tag {
+        display: inline-block;
+        padding: 8px 18px;
+        background: #efe9ff;
+        color: #7b4dff;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    /* Heading */
+    .voice-heading {
+        font-size: 52px;
+        font-weight: 800;
+        margin-top: 20px;
+        line-height: 1.3;
+        color: #111;
+    }
+
+    .voice-heading span {
+        background: linear-gradient(90deg, #7b4dff, #00c2ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Content Box */
+    .voice-content-box {
+        background: #fff;
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+        position: relative;
+    }
+
+    /* Left Border */
+    .voice-content-box::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 6px;
+        height: 120px;
+        border-radius: 10px;
+        background: linear-gradient(#7b4dff, #00c2ff);
+    }
+
+    /* Paragraph */
+    .voice-content-box p {
+        color: #666;
+        line-height: 2.1;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    /* Responsive */
+    @media(max-width:991px) {
+
+        .voice-heading {
+            font-size: 38px;
+        }
+
+        .voice-content-box {
+            padding: 35px;
+        }
+
+    }
+
+    @media(max-width:576px) {
+
+        .voice-heading {
+            font-size: 30px;
+        }
+
+        .voice-content-box {
+            padding: 25px;
+        }
+
+        .voice-content-box::before {
+            height: 80px;
+        }
+
+    }
+
     /* Responsive */
     @media(max-width:991px) {
 
@@ -1521,7 +1613,72 @@
 
     </section>
 
-     <!-- Team Start -->
+    <section class="voice-about-section py-5">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <span class="voice-tag">
+                    WHAT DO WE DO?
+                </span>
+
+                <h2 class="voice-heading">
+                    Smart Voice Call Solutions By
+                    <span>Glocious Infotech Pvt. Ltd.</span>
+                </h2>
+
+            </div>
+
+            <!-- Content Box -->
+            <div class="voice-content-box">
+
+                <p>
+                    Glocious Infotech Pvt. Ltd. provides advanced Voice Call
+                    solutions designed to help businesses communicate with
+                    customers quickly, efficiently, and professionally.
+                    Our automated voice broadcasting services allow businesses
+                    to send personalized voice messages, alerts, reminders,
+                    promotional campaigns, and important notifications to
+                    thousands of customers instantly.
+                </p>
+
+                <p>
+                    We understand the importance of direct and effective
+                    communication in building strong customer relationships.
+                    That is why we offer customized voice call services
+                    tailored according to your business requirements and
+                    communication goals. Our smart voice solutions help
+                    businesses improve customer engagement, increase response
+                    rates, and deliver information with a more personal touch.
+                </p>
+
+                <p>
+                    At Glocious Infotech Pvt. Ltd., we focus on delivering
+                    secure, scalable, and high-performance voice communication
+                    services with advanced features like automated calling,
+                    voice broadcasting, multilingual support, call scheduling,
+                    and real-time reporting. Our platform ensures reliable
+                    communication and smooth customer interaction experiences.
+                </p>
+
+                <p>
+                    Our mission is to help businesses transform communication
+                    through innovative voice technology solutions that improve
+                    customer experience, strengthen brand communication, and
+                    support business growth. Connect with Glocious Infotech
+                    Pvt. Ltd. today and experience smarter, faster, and more
+                    effective voice call services for your business.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">

@@ -424,6 +424,98 @@
 
     }
 
+    /* Section */
+    .whatsapp-about-section {
+        background: linear-gradient(135deg, #f8fbff, #ffffff);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Tag */
+    .wa-tag {
+        display: inline-block;
+        padding: 8px 18px;
+        background: #e9fff1;
+        color: #25d366;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    /* Heading */
+    .wa-heading {
+        font-size: 52px;
+        font-weight: 800;
+        margin-top: 20px;
+        line-height: 1.3;
+        color: #111;
+    }
+
+    .wa-heading span {
+        background: linear-gradient(90deg, #25d366, #00c2ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Content Box */
+    .wa-content-box {
+        background: #fff;
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+        position: relative;
+    }
+
+    /* Left Border */
+    .wa-content-box::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 6px;
+        height: 120px;
+        border-radius: 10px;
+        background: linear-gradient(#25d366, #00c2ff);
+    }
+
+    /* Paragraph */
+    .wa-content-box p {
+        color: #666;
+        line-height: 2.1;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    /* Responsive */
+    @media(max-width:991px) {
+
+        .wa-heading {
+            font-size: 38px;
+        }
+
+        .wa-content-box {
+            padding: 35px;
+        }
+
+    }
+
+    @media(max-width:576px) {
+
+        .wa-heading {
+            font-size: 30px;
+        }
+
+        .wa-content-box {
+            padding: 25px;
+        }
+
+        .wa-content-box::before {
+            height: 80px;
+        }
+
+    }
+
     /* Responsive */
     @media(max-width:991px) {
 
@@ -667,7 +759,7 @@
                 <div class="col-lg-6">
 
                     <span class="wa-benefit-label">
-                        BULK SMS
+                        Whatsapp Marketing
                     </span>
 
                     <h2 class="wa-benefit-title">
@@ -823,8 +915,7 @@
                     <div class="wa-benefit-image-box">
 
                         <!-- Main Image -->
-                        <img src="./img/benefits.png" class="img-fluid wa-benefit-main"
-                            alt="WhatsApp Benefits">
+                        <img src="./img/benefits.png" class="img-fluid wa-benefit-main" alt="WhatsApp Benefits">
 
                     </div>
 
@@ -836,7 +927,73 @@
 
     </section>
 
-     <!-- Team Start -->
+    <section class="whatsapp-about-section py-5">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <span class="wa-tag">
+                    WHAT DO WE DO?
+                </span>
+
+                <h2 class="wa-heading">
+                    Smart WhatsApp Marketing Solutions By
+                    <span>Glocious Infotech Pvt. Ltd.</span>
+                </h2>
+
+            </div>
+
+            <!-- Content Box -->
+            <div class="wa-content-box">
+
+                <p>
+                    Glocious Infotech Pvt. Ltd. provides advanced WhatsApp
+                    Marketing solutions that help businesses connect with
+                    customers instantly through personalized and interactive
+                    communication. From promotional campaigns and customer
+                    engagement to automated responses and business updates,
+                    our WhatsApp marketing platform is designed to improve
+                    communication efficiency and customer experience.
+                </p>
+
+                <p>
+                    We understand the growing importance of WhatsApp as one
+                    of the most powerful communication channels for modern
+                    businesses. That is why we offer customized WhatsApp
+                    marketing services tailored according to your business
+                    requirements and audience needs. Our solutions help
+                    businesses build stronger customer relationships,
+                    improve engagement, and increase conversion rates
+                    through smart communication strategies.
+                </p>
+
+                <p>
+                    At Glocious Infotech Pvt. Ltd., we focus on delivering
+                    secure, scalable, and high-performance WhatsApp marketing
+                    services with features like bulk messaging, multimedia
+                    sharing, chatbot integration, automated notifications,
+                    and real-time customer interaction. Our platform helps
+                    businesses communicate faster and more effectively.
+                </p>
+
+                <p>
+                    Our mission is to help businesses transform customer
+                    communication with innovative digital solutions that
+                    improve brand visibility, customer trust, and business
+                    growth. Connect with Glocious Infotech Pvt. Ltd. today
+                    and experience smarter, faster, and more engaging
+                    WhatsApp marketing services.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">

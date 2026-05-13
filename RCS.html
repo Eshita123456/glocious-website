@@ -536,6 +536,95 @@
 
     }
 
+    /* Section */
+    .rcs-about-section {
+        background: linear-gradient(135deg, #f8fbff, #ffffff);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Tag */
+    .rcs-tag {
+        display: inline-block;
+        padding: 8px 18px;
+        background: #efe9ff;
+        color: #7b4dff;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    /* Heading */
+    .rcs-heading {
+        font-size: 52px;
+        font-weight: 800;
+        margin-top: 20px;
+        line-height: 1.3;
+        color: #111;
+    }
+
+    .rcs-heading span {
+        background: linear-gradient(90deg, #7b4dff, #00c2ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Content Box */
+    .rcs-content-box {
+        background: #fff;
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+        position: relative;
+    }
+
+    /* Left Border */
+    .rcs-content-box::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 6px;
+        height: 120px;
+        border-radius: 10px;
+        background: linear-gradient(#7b4dff, #00c2ff);
+    }
+
+    /* Paragraph */
+    .rcs-content-box p {
+        color: #666;
+        line-height: 2.1;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    /* Responsive */
+    @media(max-width:991px) {
+        .rcs-heading {
+            font-size: 38px;
+        }
+
+        .rcs-content-box {
+            padding: 35px;
+        }
+    }
+
+    @media(max-width:576px) {
+        .rcs-heading {
+            font-size: 30px;
+        }
+
+        .rcs-content-box {
+            padding: 25px;
+        }
+
+        .rcs-content-box::before {
+            height: 80px;
+        }
+    }
+
+
     /* Responsive */
     @media(max-width:991px) {
 
@@ -1001,8 +1090,75 @@
 
     </section>
 
+    <section class="rcs-about-section py-5">
 
-     <!-- Team Start -->
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <span class="rcs-tag">
+                    WHAT DO WE DO?
+                </span>
+
+                <h2 class="rcs-heading">
+                    Advanced RCS Messaging Solutions By
+                    <span>Glocious Infotech Pvt. Ltd.</span>
+                </h2>
+
+            </div>
+
+            <!-- Content Box -->
+            <div class="rcs-content-box">
+
+                <p>
+                    Glocious Infotech Pvt. Ltd. provides advanced and
+                    interactive RCS Messaging solutions designed to help
+                    businesses create smarter and more engaging customer
+                    communication experiences. RCS messaging goes beyond
+                    traditional SMS by allowing businesses to send rich
+                    media content such as images, videos, buttons,
+                    carousels, and branded messages directly to customers.
+                </p>
+
+                <p>
+                    We understand the importance of modern communication
+                    in today’s digital business environment. That is why
+                    we offer customized RCS messaging services tailored
+                    according to your business goals and customer needs.
+                    Our platform helps businesses improve engagement,
+                    increase response rates, and deliver more personalized
+                    communication experiences through interactive messaging.
+                </p>
+
+                <p>
+                    At Glocious Infotech Pvt. Ltd., we focus on delivering
+                    secure, scalable, and high-performance RCS solutions
+                    with features like verified business messaging,
+                    multimedia sharing, real-time communication,
+                    interactive call-to-action buttons, and smart customer
+                    engagement tools. Our solutions help brands build
+                    stronger customer trust and improve communication
+                    effectiveness.
+                </p>
+
+                <p>
+                    Our mission is to help businesses transform digital
+                    communication through innovative RCS messaging
+                    technology that enhances customer experience,
+                    strengthens brand identity, and supports business
+                    growth. Connect with Glocious Infotech Pvt. Ltd.
+                    today and experience next-generation messaging
+                    solutions for your business.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
